@@ -1,0 +1,45 @@
+/*// ==========================================================================
+// Foundation
+// ==========================================================================*/
+
+@import './reset.css';
+
+
+/*// ==========================================================================
+// Layout
+// ==========================================================================*/
+
+/*// ==========================================================================
+// Object
+// ==========================================================================*/
+
+/*// -----------------------------------------------------------------
+// Component
+// -----------------------------------------------------------------*/
+/*// -----------------------------------------------------------------
+// Project
+// -----------------------------------------------------------------*/
+@import './foundation/project/index.css';
+@import './foundation/project/home.css';
+@import './foundation/project/wrap.css';
+@import './foundation/project/item.css';
+@import './foundation/project/animal.css';
+
+/*// -----------------------------------------------------------------
+// Utility
+// -----------------------------------------------------------------*/
+
+/*// -----------------------------------------------------------------
+// font
+// -----------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kosugi');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@font-face {
+  font-family: 'mamelom';
+  src: url('./fonts/mamelon_hireg/Mamelon-3-Hi-Regular.otf') format('opentype');
+  src: url('./fonts/mamelon_hireg/Mamelon-3.5-Hi-Regular.otf') format('opentype');
+  src: url('./fonts/mamelon_hireg/Mamelon-4-Hi-Regular.otf') format('opentype');
+  src: url('./fonts/mamelon_hireg/Mamelon-5-Hi-Regular.otf') format('opentype');
+}

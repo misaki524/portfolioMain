@@ -1,0 +1,151 @@
+/* ヘッダーと履歴書部分 */
+.p-home{
+  max-width: 1440px;
+  height: 70px;
+  position: relative;
+  padding: 1.5rem 2rem;
+  border-bottom: 3px solid rgb(110, 110, 110);
+  border-radius: 0 0 10px 10px;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  background-color: whitesmoke;
+}
+.p-home:before {
+  position: absolute;
+  bottom: -14px;
+  left: 1em;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 14px 12px 0 12px;
+  border-style: solid;
+  border-color: rgb(110, 110, 110) transparent transparent transparent;
+}
+.p-home::after {
+  position: absolute;
+  bottom: -10px;
+  left: 1em;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 14px 12px 0 12px;
+  border-style: solid;
+  border-color: transparent transparent transparent;
+}
+
+.p-home__title{
+  width: 50%;
+  color:rgb(92, 89, 89);
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: 'Sacramento', cursive;
+}
+.p-home__titleLink {
+  color: inherit;
+  text-decoration: none;
+}
+.p-home__listGroup{
+  width: 50%;
+}
+.p-home__list{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.p-home__nav {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(0);
+  background-color:rgb(48, 127, 176);
+  transition: ease .10s;
+  opacity: 0;  /* 初期状態は非表示 */
+  padding-left: 10px;
+}
+.header__hamburger {
+  width: 48px;
+  height: 100%;
+}
+
+.hamburger {
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 9999;
+}
+.hamburger span {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(20, 82, 182);
+  position: relative;
+  transition: ease .4s;
+  display: block;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  margin: 8px 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0;
+}
+
+
+/* ハンバーガーメニュークリック後のスタイル */
+.hamburger.active span:nth-child(1) {
+  top: 10px;
+  transform: rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  top: -15px;
+  transform: rotate(-45deg);
+}
+
+.p-home__nav.active {
+  opacity: 1;  /* アクティブ時に表示 */
+  transform: translateX(0);  /* ゼロに戻すことでフェードイン */
+  transition: ease .20s;
+
+
+}
+.slide-items {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-items img {
+  width: 50%;
+  object-fit: cover;
+  margin: auto;
+}
+.p-home__items{
+  margin-top: 20px;
+}
+.p-home__box {
+  padding: 1rem 1rem;
+  border-left: 5px dashed #000;
+  font-size: 60px;
+  font-family: 'Sacramento', cursive;
+}
+
+.p-home__subText{
+  text-decoration: none;
+  font-size: 40px;
+  color: coral;
+  font-family: 'Sacramento', cursive;
+}
+.p-home__subItem{
+  border-bottom: 3px dashed #000;
+  width: 14%;
+}

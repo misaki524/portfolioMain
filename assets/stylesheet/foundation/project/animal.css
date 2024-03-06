@@ -1,0 +1,92 @@
+.p-animal{
+  max-width: 1440px;
+  width: 100%;
+}
+.p-animal__page{
+  margin: 20px auto;
+}
+.p-animal__title{
+  width: 20%;
+  margin-left: 13%;
+  background: linear-gradient(#fff 60%, #D5EAD8 0%);
+  font-family: "Nico Moji";
+  font-size: 35px;
+  white-space: nowrap;
+}
+.p-animal__textBox{
+  background-image: linear-gradient(180deg, #ccc 1px, transparent 1px); /* 罫線の色と太さ  */
+  background-size: 100% 2.5em; /* 行の高さ */
+  line-height: 2.5em; /* 文字の高さ */
+  padding-bottom: 1px; /* 最終行の下にも罫線を引く */
+  /* margin: 0px 10px 50px 20px; */
+  width: 100%;
+  height: 80%;
+}
+.p-animal__item{
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 30px;
+text-align: center;
+  background-color: #FFF9C9;
+}
+.p-animal__text{
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 20px;
+}
+.p-animal__green {
+	background-color: #D5EAD8;
+}
+
+.trimming01 {
+  display: inline-block;
+  width: 100%;
+}
+.trimming01 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.p-animal__textGroup{
+  gap: 70px;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.p-top {
+  color: #333;
+  position: fixed;
+  bottom: 24px;
+  right: 80px;
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  padding: 16px 20px;
+  text-align: right;
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+}
+
+.arrow1 {
+width: 48px;
+height: 1px;
+background: #333;
+position: absolute;
+top: 50%;
+right: 62px;
+
+}
+
+.arrow2 {
+width: 1px;
+height: 12px;
+background: #333;
+position: absolute;
+top: calc(50% + 1px);
+right: 109px;
+transform: rotate(-130deg);
+transform-origin: top left;
+
+}

@@ -1,0 +1,90 @@
+/* 履歴書部分 */
+.p-wrap{
+  width: 80%;
+  margin: 20px auto;
+}
+.p-wrap__mainItem{
+  display: flex;
+  justify-content: space-between;
+
+}
+.p-wrap__img{
+  width: 15%;
+  height: 15%;
+  border-radius: 20px;
+  object-fit: cover;
+  padding: 10%;
+}
+.p-wrap__group{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 20px 10px;
+  padding: 1rem 2rem;
+  border-bottom: 3px dashed darkgray;
+}
+.p-wrap__title{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 45px;
+  color: darkgray;
+}
+.p-wrap__date{
+  width: 150px;
+  height: 30px;
+  color: darkgray;
+  padding: inherit;
+  font-family: 'Kosugi', sans-serif;
+}
+.p-wrap__textGroup{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Kosugi', sans-serif;
+}
+.p-wrap__item{
+  display: flex;
+  justify-content: end;
+  height: 50px;
+  color: darkgray;
+}
+.p-wrap__text{
+  margin: auto;
+  width: 100%;
+  font-family: 'Kosugi', sans-serif;
+
+}
+.p-wrap__subText {
+  border: solid 1px black;
+  padding: 10px;
+  font-family: 'Kosugi', sans-serif;
+}
+.p-wrap__itemText {
+  border: solid 1px black;
+  padding: 10px;
+  font-family: 'Kosugi', sans-serif;
+}
+
+.p-wrap__mainText {
+  width: 20%;
+  background: #7dc3f8;
+  border: solid 1px black;
+  color: black;
+  padding: 10px;
+  font-family: 'Kosugi', sans-serif;
+}
+.p-wrap__mainBox{
+  width: 300px;
+  background: #7dc3f8;
+  border: solid 1px black;
+  padding: 10px;
+  font-family: 'Kosugi', sans-serif;
+}
+.p-wrap__boxText{
+  width: 300px;
+  border: solid 1px black;
+  color: black;
+  padding: 10px;
+  text-align: right;
+  font-family: 'Kosugi', sans-serif;
+}
