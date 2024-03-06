@@ -22,7 +22,6 @@
             <ul class="p-home__items nav-items">
               <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( home_url( '/' )); ?>single#linkanProfile">profile</a></li>
               <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( site_url( '/' ) ); ?>animal#linkAnimal">animal</a></li>
-              <li class="p-home__subItem"><a class="p-home__subText" href="">apparel</a></li>
             </ul>
           </nav>
           <button class="header__hamburger hamburger" id="js-hamburger">
