@@ -5,16 +5,11 @@
 <div class="p-wrap">
   <div class="p-wrap__mainGroup">
     <div class="p-wrap__mainItem">
-      <img class="p-wrap__img" src="<?php echo get_template_directory_uri(); ?>/IMG_item.jpg" alt="">
-      <!-- <div class="p-wrap__group">
-        <h3 class="p-wrap__title">履歴書</h3>
-        <p class="p-wrap__date">
-        </p>
-      </div> -->
+      <img class="p-wrap__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/IMG_item.jpg" alt="">
       <div class="p-wrap__textGroup">
         <div class="p-wrap__item">
           <?php
-            echo date('Y年m月d日')."<br/>\n";//現在日付 2020-01-01
+            echo date('Y年m月d日')."<br/>\n";
           ?>
         </div>
         <table class="p-wrap__text">
@@ -119,6 +114,10 @@
         <tr>
           <th class="p-wrap__mainText">2023年3月</th>
           <td class="p-wrap__itemText">株式会社サクセスストーリー 入社</td>
+        </tr>
+        <tr>
+          <th class="p-wrap__mainText">2024年3月</th>
+          <td class="p-wrap__itemText">株式会社サクセスストーリー 退社予定</td>
         </tr>
         <tr>
           <th class="p-wrap__mainText"></th>

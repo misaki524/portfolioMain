@@ -9,11 +9,11 @@
 
 }
 .p-wrap__img{
-  width: 15%;
+  width: 25%;
   height: 15%;
   border-radius: 20px;
   object-fit: cover;
-  padding: 10%;
+  padding: 5%;
 }
 .p-wrap__group{
   display: flex;
