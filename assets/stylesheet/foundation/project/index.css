@@ -63,3 +63,13 @@
   0% {opacity:0;}
   100% {opacity:1;}
 }
+@media screen and (max-width: 1126px) { /* pc用スタイル */
+  .p-page__wrap{
+    flex-flow: column;
+    margin: 20px auto;
+  }
+  .p-page__text{
+    padding-bottom: 20px;
+  }
+
+}

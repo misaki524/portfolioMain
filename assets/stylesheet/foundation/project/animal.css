@@ -45,7 +45,7 @@ text-align: center;
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .p-animal__textGroup{
   gap: 70px;
@@ -78,7 +78,6 @@ top: 50%;
 right: 62px;
 
 }
-
 .arrow2 {
 width: 1px;
 height: 12px;
@@ -88,5 +87,13 @@ top: calc(50% + 1px);
 right: 109px;
 transform: rotate(-130deg);
 transform-origin: top left;
-
+}
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .p-animal__textGroup{
+    flex-flow: column;
+  }
+  .trimming01 {
+    width: 70%;
+    margin: auto;
+  }
 }
