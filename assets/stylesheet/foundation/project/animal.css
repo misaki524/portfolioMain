@@ -88,7 +88,7 @@ right: 109px;
 transform: rotate(-130deg);
 transform-origin: top left;
 }
-@media screen and (min-width: 1126px) { /* pc用スタイル */
+@media screen and (max-width: 1126px) { /* pc用スタイル */
   .p-animal__textGroup{
     flex-flow: column;
   }
