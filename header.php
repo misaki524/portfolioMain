@@ -15,13 +15,13 @@
   <body>
     <div class="p-animal">
       <div class="p-home">
-        <h1 class="p-home__title"><a class="p-home__titleLink" href="<?php echo esc_url( home_url( '/' )); ?>">portfolio</h1>
+        <h1 class="p-home__title"><a class="p-home__titleLink" href="<?php echo esc_url( home_url( '/' )); ?>">kikuchi portfolio</h1>
         <div class="p-home__group">
           <nav class="p-home__nav nav" id="js-nav">
-            <h2 class="p-home__box">site map</h2>
+            <h2 class="p-home__box">HOME</h2>
             <ul class="p-home__items nav-items">
-              <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( home_url( '/' )); ?>single#linkanProfile">profile</a></li>
-              <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( site_url( '/' ) ); ?>animal#linkAnimal">animal</a></li>
+              <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( home_url( '/' )); ?>single#linkanProfile">about me</a></li>
+              <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( site_url( '/' ) ); ?>animal#linkAnimal">like family</a></li>
             </ul>
           </nav>
           <button class="header__hamburger hamburger" id="js-hamburger">

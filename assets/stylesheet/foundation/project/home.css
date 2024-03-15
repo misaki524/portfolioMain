@@ -134,7 +134,7 @@
 }
 .p-home__box {
   padding: 1rem 1rem;
-  border-left: 5px dashed #000;
+  /* border-left: 5px dashed #000; */
   font-size: 60px;
   font-family: 'Sacramento', cursive;
 }
