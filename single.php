@@ -1,6 +1,6 @@
 
 <?php get_header(); ?>
-<div class="p-page__wrap">
+<div class="p-page__homeWrap">
     <p class ="p-page__text">1995年5月24日生まれ<br>趣味：絵を描く。ゲームをする。読書をする。大体インドア。</p>
     <img  class="p-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/IMG_0007.jpg" alt="">
   </div>
@@ -18,9 +18,8 @@
     <a class="p-page__link" href="https://k-kikuchi.my.canva.site/photo-insta">
       <img class="p-page__subImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/canva.jpg" alt="">
     </a>
-  </div>
 
-
+</div>
 <div class="p-wrap">
   <div class="p-wrap__mainGroup">
     <div class="p-wrap__mainItem">
