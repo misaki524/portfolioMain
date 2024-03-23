@@ -1,4 +1,18 @@
 /* ヘッダーと履歴書部分 */
+.p-page__homeWrap{
+  max-width: 1440px;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../../images/IMG_0006.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-color: rgba(255,255,255,0.5);
+  background-blend-mode: lighten;
+  margin: 30px auto;
+}
+
 .p-home{
   max-width: 1440px;
   height: 70px;

@@ -20,15 +20,8 @@
   padding: 35px 20px 20px 10px;
   font-family: "Nico Moji";
   font-size: 70px;
-  color: rgb(17, 107, 20);
+  color: rgb(4, 200, 167);
   white-space: nowrap;
-
-}
-.p-page__text{
-  font-size: 20px;
-  white-space:nowrap;
-  text-align: center;
-
 }
 .p-page__img{
   display: block;
@@ -42,11 +35,6 @@
   height: 35%;
   border-radius: 20px;
   object-fit: cover;
-}
-.p-page__linkGroup{
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 .p-page__link{
   width: 15%;
@@ -66,6 +54,10 @@
   }
   .p-page__text{
     padding-bottom: 20px;
+  }
+  .p-page__title{
+    width: 30%;
+    margin: auto;
   }
 
 }
