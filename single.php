@@ -15,8 +15,11 @@
     <img class="p-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/IMG_0008.jpg" alt="">
   </div>
   <div class="p-page__mainGroup">
-    <h1 class="p-page__mainTitle">irasuto link</h1>
     <div>
+      <h1 class="p-page__mainTitle">irasuto link</h1>
+      <p class ="p-page__text">canvaで絵をまとめてます</p>
+    </div>
+    <div class="p-page__imgGroup">
     <a class="p-page__link" href="https://k-kikuchi.my.canva.site/photo-insta">
       <img class="p-page__subImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/canva.jpg" alt="">
     </a>

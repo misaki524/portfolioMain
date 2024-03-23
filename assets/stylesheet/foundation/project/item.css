@@ -30,9 +30,10 @@
 .p-page__mainGroup{
   font-family: 'mamelom', sans-serif;
   display: flex;
-  margin: auto;
+  margin: 40px auto 0px;
   align-items: center;
   justify-content: space-evenly;
+  text-align: center;
 }
 .p-page__mainTitle{
   /* width: 20%; */
@@ -40,8 +41,16 @@
   font-size: 70px;
   color: rgb(4, 200, 167);
   white-space: nowrap;
-  text-align: center;
 }
 .p-page__text{
   font-size: 20px;
+  font-weight: bolder;
+}
+.p-page__imgGroup{
+  width: 30%;
+}
+.p-page__subImg{
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
 }
