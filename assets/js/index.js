@@ -1,25 +1,3 @@
-jQuery(function ($) {
-  $(window).on('load', function () {
-
-  });
-});
-$(document).ready(function() {
-  const ham = $('#js-hamburger');
-  const nav = $('#js-nav');
-  const pHome = $('.p-home'); // p-home要素を取得
-  const pWrap = $('.p-wrap__group');
-  const slide = $('.slide-items');
-
-  ham.on('click', function () {
-    ham.toggleClass('active');
-    nav.toggleClass('active');
-    if (ham.hasClass('active')) {
-      nav.show().fadeIn(2000);
-    } else {
-      nav.fadeOut(2000); // ハンバーガーメニューが非表示の場合はnavを非表示
-    }
-  });
-});
 
 $(function() {
   // 一旦hide()で隠してフェードインさせる
@@ -79,5 +57,4 @@ $(window).on('load', function () {
     $(this).html(textbox);
   });
 
-  EachTextAnimeControl();/* アニメーション用の関数を呼ぶ*/
-});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+});
