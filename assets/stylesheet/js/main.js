@@ -5,8 +5,8 @@ jQuery(function ($) {
 
   $(document).ready(function () {
     const ham = $('#js-hamburger');
-    const nav = $('#js-nav');
-    const pHomeNav = $('.');
+    const nav = $('.p-home__nav');
+    const pHomeNav = $('.p-home__items');
     const pHome = $('.p-home'); // p-home要素を取得
     const pWrap = $('.p-wrap__group');
     const slide = $('.slide-items');
@@ -77,4 +77,17 @@ jQuery(function ($) {
 
     EachTextAnimeControl(); /* アニメーション用の関数を呼ぶ*/
   }); // ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+
+  const swiper = new Swiper(".swiper", {
+    // ページネーションが必要なら追加
+    pagination: {
+      el: ".swiper-pagination"
+    },
+    // ナビボタンが必要なら追加
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+
 });

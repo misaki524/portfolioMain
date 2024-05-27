@@ -4,6 +4,7 @@
 </a>
 <footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/stylesheet/js/slick.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/stylesheet/js/main.js"></script>
   <?php wp_footer(); ?>

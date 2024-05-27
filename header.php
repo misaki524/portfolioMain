@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/stylesheet/app.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/stylesheet/foundation/slick/slick-theme.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/stylesheet/foundation/slick/slick.css">
+  <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
   <title>個人用ポートフォリオ</title>
   <?php wp_head(); ?>

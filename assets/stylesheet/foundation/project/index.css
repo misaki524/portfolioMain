@@ -31,8 +31,7 @@
   object-fit: cover;
 }
 .p-page__link{
-  width: 15%;
-  height: 10%;
+  display: inline-block;
 }
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
