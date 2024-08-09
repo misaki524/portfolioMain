@@ -1,0 +1,31 @@
+.p-animal__postList{
+  width: 75%;
+  margin: auto;
+}
+.p-animal__list{
+  background: linear-gradient(#fff 60%, #26ef4b 0%);
+  width: fit-content;
+  margin-left: 13%;
+  font-family: "Nico Moji";
+  font-size: 35px;
+  white-space: nowrap;
+}
+.p-animal_textTitle{
+  background: linear-gradient(#fff 60%, #2691ef 0%);
+  color: dimgrey;
+  font-size: 30px;
+  width: fit-content;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.p-animal__titleLink{
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+}
+.p-animal__link{
+  background: linear-gradient(#fff 60%, #259dc1 0%);
+  width: auto;
+  text-decoration: none;
+  color: #000;
+}

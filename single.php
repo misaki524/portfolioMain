@@ -36,43 +36,56 @@
       </a>
     </div>
   </div>
-  <div class="swiper-wrapper">
-    <div class="p-page__mainGroup">
-      <h1 class="p-page__mainTitle">site</h1>
-      <p class ="p-page__text">今までのドキュメント</p>
-      <div class="test swiper-slide">
-        <?php
+  <div class="p-page__siteGroup">
+    <h1 class="p-page__mainTitle">site</h1>
+    <p class ="p-page__text">今までのドキュメント</p>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <?php
         $args = array(
-            'posts_per_page' => 2
+          'posts_per_page' => 10
         );
         $the_query = new WP_Query($args);
-        if ($the_query->have_posts()) : ?>
-            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                <!-- ここからループさせる内容 -->
-                <dl class="test-item">
-                    <dt class="test-date"><?php the_time('Y-m-d'); ?></dt>
-                              <img  class="p-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/IMG_0007.jpg" alt="">
-
-                    <dd class="test-title">
-                        <a class="test-link" href="<?php the_permalink(); ?>">
-                            <?php the_title(); ?>
-                        </a>
-                    </dd>
-                </dl>
-                <!-- ループさせる内容ここまで -->
-          <?php endwhile; ?>
-          <?php else : ?>
-          <p>No posts found.</p>
+        if ($the_query->have_posts()) :
+          $counter = 0;
+          while ($the_query->have_posts()) : $the_query->the_post();
+          if ($counter % 2 == 0): // 新しいスライドの開始
+      ?>
+      <div class="swiper-slide">
+        <ul>
           <?php endif; ?>
-          <?php wp_reset_postdata(); // クエリをリセット ?>
+            <li class="test-item">
+              <dl>
+                <dt class="test-date"><?php the_time('Y-m-d'); ?></dt>
+                <dd class="test-title">
+                  <a class="test-link" href="<?php the_permalink(); ?>">
+                    <?php the_title(); ?>
+                  </a>
+                </dd>
+              </dl>
+            </li>
+          <?php
+            if ($counter % 2 == 1): // スライドの終了
+          ?>
+        </ul>
       </div>
+      <?php endif;
+        $counter++;
+        endwhile;
+        if ($counter % 2 != 0): // 最後のスライドが閉じられていない場合
+      ?>
+    </div>
+    <?php
+      endif;
+      else :
+    ?>
+    <p>No posts found.</p>
+    <?php endif; ?>
+    <?php wp_reset_postdata(); // クエリをリセット ?>
+    </div>
+    <!-- ナビゲーションボタン -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
-  <!-- 必要に応じてナビボタン -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-  <!-- 必要に応じてページネーション -->
-  <div class="swiper-button swiper-pagination"></div>
-  </div>
-
 </div>
 <?php get_footer(); ?>

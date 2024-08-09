@@ -1,6 +1,7 @@
 jQuery(function ($) {
   $(window).on('load', function () {
     // windowのloadイベントが発火したときの処理
+    EachTextAnimeControl(); /* アニメーション用の関数を呼ぶ*/
   });
 
   $(document).ready(function () {
@@ -16,21 +17,50 @@ jQuery(function ($) {
       nav.toggleClass('active');
       pHomeNav.toggleClass('active');
     });
-  });
-  $(function () {
+
     // 一旦hide()で隠してフェードインさせる
     $('.trimming01').hide().fadeIn('slow');
-  });
 
-  $(document).ready(function () {
-    // ページが読み込まれたら実行する処理
-    EachTextAnimeControl();
-  });
+    // spanタグを追加する
+    var element = $(".p-page__title");
+    element.each(function () {
+      var text = $(this).text();
+      var textbox = "";
+      text.split('').forEach(function (t, i) {
+        if (t !== " ") {
+          if (i < 10) {
+            textbox += '<span style="animation-delay:.' + i + 's;">' + t + '</span>';
+          } else {
+            var n = i / 10;
+            textbox += '<span style="animation-delay:' + n + 's;">' + t + '</span>';
+          }
+        } else {
+          textbox += t;
+        }
+      });
+      $(this).html(textbox);
+    });
 
-  // スクロール時のイベントを定義
-  $(window).scroll(function () {
-    // EachTextAnimeControl関数を実行
-    EachTextAnimeControl();
+    EachTextAnimeControl(); /* アニメーション用の関数を呼ぶ*/
+
+    // Swiperの初期化
+    const swiper = new Swiper(".swiper", {
+      // ページネーションが必要なら追加
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // ナビボタンが必要なら追加
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    // スクロール時のイベントを定義
+    $(window).scroll(function () {
+      EachTextAnimeControl();
+    });
   });
 
   // eachTextAnimeにappeartextというクラス名を付ける定義
@@ -50,44 +80,19 @@ jQuery(function ($) {
   // 画面をスクロールをしたら動かしたい場合の記述
   $(window).scroll(function () {
     EachTextAnimeControl(); /* アニメーション用の関数を呼ぶ*/
-  }); // ここまで画面をスクロールをしたら動かしたい場合の記述
-
-  // 画面が読み込まれたらすぐに動かしたい場合の記述
-  $(window).on('load', function () {
-    //spanタグを追加する
-    var element = $(".p-page__title");
-    element.each(function () {
-      var text = $(this).text();
-      var textbox = "";
-      text.split('').forEach(function (t, i) {
-        if (t !== " ") {
-          if (i < 10) {
-            textbox += '<span style="animation-delay:.' + i + 's;">' + t + '</span>';
-          } else {
-            var n = i / 10;
-            textbox += '<span style="animation-delay:' + n + 's;">' + t + '</span>';
-          }
-
-        } else {
-          textbox += t;
-        }
-      });
-      $(this).html(textbox);
-    });
-
-    EachTextAnimeControl(); /* アニメーション用の関数を呼ぶ*/
-  }); // ここまで画面が読み込まれたらすぐに動かしたい場合の記述
-
-  const swiper = new Swiper(".swiper", {
-    // ページネーションが必要なら追加
-    pagination: {
-      el: ".swiper-pagination"
-    },
-    // ナビボタンが必要なら追加
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
   });
-
+});
+document.addEventListener('DOMContentLoaded', function() {
+  var swiper = new Swiper('.swiper', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+  });
 });

@@ -43,6 +43,10 @@
   color: rgb(4, 200, 167);
   white-space: nowrap;
 }
+.p-page__siteGroup{
+  margin: 40px auto 0px;
+  text-align: center;
+}
 .p-page__text{
   font-size: 20px;
   font-weight: bolder;

@@ -26,8 +26,8 @@
       <nav class="p-home__nav " id="js-nav">
         <ul class="p-home__items">
           <h2 class="p-home__box">HOME</h2>
-          <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( home_url( '/' )); ?>single#linkanProfile">about me</a></li>
-          <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( site_url( '/' ) ); ?>animal#linkAnimal">like family</a></li>
+          <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( home_url( '/single' )); ?>#linkanProfile">about me</a></li>
+          <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( home_url( '/news' ) ); ?>">animal archive</a></li>
         </ul>
       </nav>
       <div class="circle-bg"></div>
