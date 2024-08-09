@@ -1,9 +1,6 @@
-/* 会社概要 */
+/* 自己紹介 */
 .p-item{
   margin: 0px 20px 20px;
-}
-dl{
-  width: 100%;
 }
 .p-item__group{
   height: 50px;
@@ -41,11 +38,9 @@ dl{
 }
 .p-page__mainTitle{
   /* width: 20%; */
-  /* font-family: "Hannotate SC", メイリオ, meiryo, sans-serif; */
-  font-weight: bolder;
-  text-align: center;
+  font-family: "Nico Moji";
   font-size: 70px;
-  color: darkgray;
+  color: rgb(4, 200, 167);
   white-space: nowrap;
 }
 .p-page__siteGroup{
@@ -53,18 +48,8 @@ dl{
   text-align: center;
 }
 .p-page__text{
-  width: 61%;
-  font-size: 39px;
+  font-size: 20px;
   font-weight: bolder;
-  margin: 50px auto;
-  text-align: start;
-}
-.p-page__subText{
-  width: 61%;
-  font-size: 39px;
-  text-align: start;
-  font-weight: bolder;
-  margin: 5% 0px;
 }
 .p-page__subGroup{
   /* width: 100%; */
@@ -75,17 +60,4 @@ dl{
 .p-page__subImg{
   border-radius: 20px;
   object-fit: cover;
-}
-.p-pageTableBox{
-  width: 80%;
-  margin: auto;
-}
-.p-page__table{
-  width: 100%;
-  font-size: 190%;
-  font-weight: bolder;
-  text-align: center;
-}
-.p-page__tableText{
-  width: 80%;
 }
