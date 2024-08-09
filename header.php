@@ -16,7 +16,7 @@
 <body>
 <div class="p-animal">
   <div class="p-home">
-    <h1 class="p-home__title"><a class="p-home__titleLink" href="<?php echo esc_url( home_url( '/' )); ?>">kikuchi portfolio</a></h1>
+    <h1 class="p-home__title"><a class="p-home__titleLink" href="<?php echo esc_url( home_url( '/' )); ?>">Eclat Chic</a></h1>
     <div class="p-home__group">
       <button class="header__hamburger hamburger" id="js-hamburger">
         <span></span>
@@ -26,8 +26,13 @@
       <nav class="p-home__nav " id="js-nav">
         <ul class="p-home__items">
           <h2 class="p-home__box">HOME</h2>
+<<<<<<< HEAD
           <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( home_url( '/single' )); ?>#linkanProfile">about me</a></li>
           <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( home_url( '/news' ) ); ?>">animal archive</a></li>
+=======
+          <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( home_url( '/' )); ?>single">会社概要</a></li>
+          <li class="p-home__subItem"><a class="p-home__subText" href="<?php echo esc_url( home_url( '/news' ) ); ?>">おすすめ商品</a></li>
+>>>>>>> f974097 (ECページ)
         </ul>
       </nav>
       <div class="circle-bg"></div>

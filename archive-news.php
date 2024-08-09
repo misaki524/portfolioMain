@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 
 <div class="p-animal__page">
+<<<<<<< HEAD
   <h2 class="p-animal__list">制作実績一覧</h2>
+=======
+  <h2 class="p-animal__list">好きなことについて語りたい</h2>
+>>>>>>> f974097 (ECページ)
   <div class="swiper">
     <div class="swiper-wrapper">
       <div id="primary" class="content-area">

@@ -1,4 +1,4 @@
-/* ヘッダーと履歴書部分 */
+/* ヘッダー */
 .p-page__homeWrap{
   width: 100%;
   height: 100vh;
@@ -6,23 +6,17 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
-  background-color: rgba(255,255,255,0.5);
-  background-blend-mode: lighten;
-  margin: 30px auto;
+  margin: 10% auto;
 }
 
 .p-home{
   height: 70px;
-  position: relative;
   padding: 1.5rem 2rem;
-  border-bottom: 3px solid rgb(110, 110, 110);
   border-radius: 0 0 10px 10px;
   padding: 20px 10px;
   display: flex;
   justify-content: space-between;
   z-index: 2;
-  background-color: whitesmoke;
 }
 .p-home:before {
   position: absolute;
@@ -32,25 +26,12 @@
   height: 0;
   content: '';
   border-width: 14px 12px 0 12px;
-  border-style: solid;
-  border-color: rgb(110, 110, 110) transparent transparent transparent;
-}
-.p-home::after {
-  position: absolute;
-  bottom: -10px;
-  left: 1em;
-  width: 0;
-  height: 0;
-  content: '';
-  border-width: 14px 12px 0 12px;
-  border-style: solid;
-  border-color: transparent transparent transparent;
 }
 
 .p-home__title{
-  width: 50%;
+  margin: auto;
   color:rgb(92, 89, 89);
-  font-size: 50px;
+  font-size: 200px;
   font-weight: bolder;
   font-family: 'Sacramento', cursive;
 }
@@ -175,7 +156,7 @@ display: none; /* 初期状態では非表示にする */
   padding: 1rem 1rem;
   /* border-left: 5px dashed #000; */
   font-size: 60px;
-  font-family: 'Sacramento', cursive;
+  font-family: "Hannotate SC", メイリオ, meiryo, sans-serif;
   text-align: center;
 	list-style: none;
 }
@@ -184,7 +165,8 @@ display: none; /* 初期状態では非表示にする */
   text-decoration: none;
   font-size: 40px;
   color: coral;
-  font-family: 'Sacramento', cursive;
+  font-family: "Hannotate SC", メイリオ, meiryo, sans-serif;
+
 }
 .p-home__subItem{
   border-bottom: 3px dashed #000;
@@ -204,10 +186,11 @@ display: none; /* 初期状態では非表示にする */
   display: block;
 }
 li{
+  margin-top: 80px;
   display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
+  align-items: center;
+  text-align: center;
+  flex-flow: column;
 }
 .swiper-button{
   bottom: -5px;
