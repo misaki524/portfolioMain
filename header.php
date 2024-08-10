@@ -16,7 +16,7 @@
 <body>
 <div class="p-animal">
   <div class="p-home">
-    <h1 class="p-home__title"><a class="p-home__titleLink" href="<?php echo esc_url( home_url( '/' )); ?>">kikuchi portfolio</a></h1>
+    <h1 class="p-home__title"><a class="p-home__titleLink" href="<?php echo esc_url( home_url( '/' )); ?>">Eclat Chic</a></h1>
     <div class="p-home__group">
       <button class="header__hamburger hamburger" id="js-hamburger">
         <span></span>
